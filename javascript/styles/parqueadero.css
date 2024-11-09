@@ -1,0 +1,105 @@
+.miParqueadero{
+    background-image: url('../images/parqueadero2.jpg');
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsión */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    width: 35vw;
+    text-align: center;
+}
+
+.ingresoVehiculos{
+    background-color: rgba(128, 128, 128, 0.74);
+    height: 6vh;
+    border: none;
+    border-radius:9px;
+    margin-top: 10vh;
+}
+
+.formularioParqueadero{
+    visibility: hidden;  
+    background-color: rgba(128, 128, 128, 0.74);
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.tituloDatos{
+    font-size: 1.8vw;
+}
+
+.inputUsuario,.inputNombre,.inputTipoVehiculo{
+    width: 70%;
+    border: none;
+    height: 4vh;
+    border-radius: 2px;
+}
+
+.contenedorHoras,.contenedorMeses{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.botonHoras,.botonMes{
+    height: 100%;
+    width: 9vw;
+}
+
+.inputHoras,.inputMes{
+    width: 50%;
+    height: 4vh;
+    border: none;
+    visibility: hidden; 
+    text-align: center; 
+    border-radius: 2px;
+}
+.pagar{
+    height: 5vh;
+    width: 8vw;
+    margin-bottom: 10px;
+}
+
+.formularioIngreso{
+    display: flex;
+   visibility: hidden;
+   background-color: rgba(128, 128, 128, 0.74);
+   position: absolute;
+   margin-top: 250px;
+   border-radius: 10px;
+   height: 20vh;
+   width: 25vw;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+.titulo2{
+    width: 100%;
+    text-align: center;
+}
+.confirmacionOtroIngreso,.confirmacionNoMasIngreso{
+    height: 4.5vh;
+    width: 5vw;
+    margin-left: 5px; 
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.terminacion{
+    visibility: hidden;
+    position: absolute;
+    margin-top: 300px;
+    background-color: rgba(128, 128, 128, 0.74);
+    border-radius: 10px;
+    width: 50vw;
+    text-align: center;
+}
+.tituloTerminacion{
+    font-weight: 800;
+}

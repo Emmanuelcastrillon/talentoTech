@@ -1,0 +1,27 @@
+.contenedorGrid2{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "menu main main"
+    "footer footer footer";/*Definimos las areas por filas*/
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20vh 55vh 15vh; /*Definimos los anchos de cada fila*/
+    gap: 10px;
+    padding: 10px;
+}
+.header{
+    grid-area: header; /*Se define el area de la caja*/
+    background-color: orange;
+}
+.menu{
+    grid-area: menu;
+    background-color: lightgreen;
+}
+.main{
+    grid-area: main;
+    background-color: lightblue;
+}
+.footer{
+    grid-area: footer;
+    background-color: lightgray;
+}

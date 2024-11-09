@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figuras.css">
+    <title>Figuras</title>
+</head>
+<body >
+
+    <main class="sitio">
+        <h1 class="tituloSitio">¡Calcula el area y perimetro de una figura!</h1>
+    
+        <form action="" class="formularioOpcionFiguras">
+            <h2 class="tituloOpcionesFiguras">Seleccione Una figura</h2>
+            <select class="selectFiguras">
+                <option  class="optionFiguras" >Figuras </option>
+                <option  class="optionTriangulo">Triangulo</option>
+                <option  class="optionTrapecio">Trapecio</option>
+                <option  class="optionCirculo">Circulo</option>
+                <option  class="optionCuadrado">Cuadrado</option>
+                <option  class="optionRombo">Rombo</option>
+                <option  class="optionPentagono">Pentagono</option>
+            </select>
+            <button onclick="handleOnclickBotonFiguras(event)" class="botonSeleccionarFigura">OK</button>
+        </form>
+
+       <div class="contenedorContinuar">
+            <h3 class="tituloContinuar">Desea realizar otro calculo</h3>
+            <button class="botonContinuar" onclick="handleOnclickBotonContinuar()">Si</button>
+            <button class="botonCancelar" onclick="handleOnclickBotonNoContinuar()">No</button>
+       </div>
+
+        <form action="" class="formularioTriangulo">
+            <h2 class="tituloFormularioTriangulo">Ingresa las medidas del triangulo en cm</h2>
+            <input type="number" class="inputBaseTriangulo" placeholder="Ingresa la base">
+            <input type="number" class="inputAlturaTriangulo" placeholder="Ingresa la altura">
+            <input type="number" class="inputLadoUnoTriangulo" placeholder="Ingresa longuitud del lado 1">
+            <input type="number" class="inputLadoDosTriangulo" placeholder="Ingresa longuitud del lado 2">
+            <input type="number" class="inputLadoTresTriangulo" placeholder="Ingresa longuitud del lado 3">
+            <button class="botonTriangulo" onclick="handleOnclickTriangulo(event)">Calcular</button>
+        </form>
+
+        <form action="" class="formularioTrapecio">
+            <h2 class="tituloFormularioTrapecio">Ingresa las medidas del trapecio en cm</h2>
+            <input type="number" class="inputBase1Trapecio" placeholder="Ingresa la base1">
+            <input type="number" class="inputBase2Trapecio" placeholder="Ingresa la base2">
+            <input type="number" class="inputAlturaTrapecio" placeholder="Ingresa la altura">
+            <input type="number" class="inputLadoUnoTrapecio" placeholder="Ingresa longuitud del lado 1">
+            <input type="number" class="inputLadoDosTrapecio" placeholder="Ingresa longuitud del lado 2">
+            <button class="botonTrapecio" onclick="handleOnclickTrapecio(event)">Calcular</button>
+        </form>
+
+        <form action="" class="formularioCirculo">
+            <h2 class="tituloFormularioCirculo">Ingresa el radio del circulo en cm</h2>
+            <input type="number" class="inputRadioCirculo" placeholder="Ingresa el radio">
+            <button class="botonCirculo" onclick="handleOnclickCirculo(event)">Calcular</button>
+        </form>
+
+        <form action="" class="formularioCuadrado">
+            <h2 class="tituloFormularioCuadrado">Ingresa el lado del cuadrado en cm</h2>
+            <input type="number" class="inputLadoCuadrado" placeholder="Ingresa la longuitud del lado">
+            <button class="botonCuadrado" onclick="handleOnclickCuadrado(event)">Calcular</button>
+        </form>
+
+        <form action="" class="formularioRombo">
+            <h2 class="tituloFormularioRombo">Ingresa las diagonales del rombo en cm</h2>
+            <input type="number" class="inputDiagonalMayor" placeholder="Ingresa la diagonal mayor">
+            <input type="number" class="inputDiagonalMenor" placeholder="Ingresa la diagonal menor">
+            <input type="number" class="inputLadoRombo" placeholder="Ingresa el lado del rombo">
+            <button class="botonRombo" onclick="handleOnclickRombo(event)">Calcular</button>
+        </form>
+
+        <form action="" class="formularioPentagono">
+            <h2 class="tituloFormularioPentagono">Ingresa las medidas del pentagono en cm</h2>
+            <input type="number" class="inputLadoPentagono" placeholder="Ingresa el lado del pentagono">
+            <input type="number" class="inputApotemaPentagono" placeholder="Ingresa el apotema del pentagono">
+            <button class="botonPentagono" onclick="handleOnclickPentagono(event)">Calcular</button>
+        </form>
+
+        <div class="mensajeFinal"></div>
+    </main>
+
+    <script src="./figure.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+}
+.sitio{
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh 0vw 0vh 10vw;
+}
+.tituloSitio{
+    text-align: center;
+    font-size: 4vw;
+}
+/******Formulario Figuras*******/
+
+.formularioOpcionFiguras{
+    background-color: rgba(128, 128, 128, 0.418);
+    width: 25%;
+    height: 30%;
+    margin: 15vh 0vw 0vh 27vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.tituloOpcionesFiguras{
+    width: 100%;
+    /* background-color: blue; */
+    text-align: center;
+}
+.selectFiguras{
+  width: 40%;
+  height: 4vh;
+  margin-bottom: 4vh;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+.optionFiguras{
+    display: none;
+}
+.botonSeleccionarFigura{
+    margin-bottom: 4vh;
+    margin-left:1vw;
+    width: 20%;
+    height: 4vh;
+    border-radius: 5px;
+    border: none;
+}
+
+/******Botones Continuar*******/
+
+.contenedorContinuar{
+    visibility: hidden;
+    background-color: rgba(128, 128, 128, 0.418);
+    width: 25%;
+    height: 15%;
+    margin: 32vh 0vw 0vh 27vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+}
+.tituloContinuar{
+    width: 100%;
+    text-align: center;
+}
+.botonContinuar,.botonCancelar{
+    margin-left: 5px;
+}
+
+/******Mensaje Final*******/
+
+.mensajeFinal{
+    visibility: hidden;
+    background-color: rgba(128, 128, 128, 0.418);
+    width: 30%;
+    height: 13%;
+    position: absolute;
+    margin: 15vh 0vw 0vh 24vw;
+    border-radius: 5px;
+    font-size: 1.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/******Formulario Triangulo, trapecio*******/
+
+.formularioTriangulo,.formularioTrapecio{
+    visibility: hidden;
+    background-color: rgba(128, 128, 128, 0.418);
+    width: 25%;
+    height: 55%;
+    position: absolute;
+    margin: 6vh 0vw 0vh 27vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.tituloFormularioTriangulo,.tituloFormularioTrapecio{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.inputBaseTriangulo,.inputAlturaTriangulo,.inputLadoUnoTriangulo,.inputLadoDosTriangulo,.inputLadoTresTriangulo,.inputBase1Trapecio,.inputBase2Trapecio,.inputAlturaTrapecio,.inputLadoUnoTrapecio,.inputLadoDosTrapecio{
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+.botonTriangulo,.botonTrapecio{
+    width: 40%;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/******Formulario Circulo ,cuadrado, rombo y pentagono*******/
+
+.formularioCirculo,.formularioCuadrado,.formularioRombo,.formularioPentagono{
+    visibility: hidden;
+    background-color: rgba(128, 128, 128, 0.418);
+    width: 27%;
+    height: 25%;
+    margin: 15vh 0vw 0vh 27vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.inputRadioCirculo,.inputLadoCuadrado,.inputDiagonalMayor,.inputDiagonalMenor,.inputLadoRombo,.inputLadoPentagono,.inputApotemaPentagono{
+    width: 40%;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 3vh;
+}
+.inputLadoCuadrado{
+    width: 50%;
+}
+.botonCirculo,.botonCuadrado,.botonRombo,.botonPentagono{
+    width: 20%;
+    height: 24px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 3vh;
+    margin-left: 10px;
+}
+
+/******Formulario rombo*******/
+
+.formularioRombo{
+    width: 27%;
+    height: 45%;
+    flex-direction: column;
+}
+.tituloFormularioRombo,.tituloFormularioPentagono{
+    width: 80%;
+    margin-top: 4px;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+.inputLadoRombo,.inputDiagonalMayor,.inputDiagonalMenor{
+    width: 50%;
+}
+
+/******Formulario pentagono*******/
+
+.formularioPentagono{
+    width: 27%;
+    height: 40%;
+    flex-direction: column;
+}
+.inputLadoPentagono,.inputApotemaPentagono{
+    width: 60%;
+}
+
+
+

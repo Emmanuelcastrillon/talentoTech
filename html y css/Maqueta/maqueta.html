@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/maqueta.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Maqueta</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedorLogo">
+            <img src="./images/logoTalentoTech.png" alt="logo" class="imgLogo">
+        </div>
+        <div class="contenedorRedes">
+            <a href="https://wa.me/+573127176418" target="_blank" class="linkWhatsap"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://x.com/" class="linkTwitter" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/talentotechvalle/" class="linkInstagram" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <button class="botonIniciarSeccion" id="iniciarSeccion">Iniciar Seccion</button>
+
+        <div class="contenedorNavegacion">
+            <a class="enlace1" href="">Navegacion</a>
+            <a class="enlace2" href="">Navegacion</a>
+            <a class="enlace3" href="">Navegacion</a>
+            <a class="enlace4" href="">Navegacion</a>
+            <a class="enlace5" href="">Navegacion</a>
+            <a class="enlace6" href="">Navegacion</a>
+        </div>
+
+        <form class="formularioIniciarSeccion">
+            <div class="contenedorTituloIniciarSeccion">
+                <h2 class="tituloIniciar">Iniciar Seccion</h2>
+            </div>
+            <div class="fila">
+                <input type="email" id="email" autofocus placeholder="Email">
+            </div>
+            <div class="fila">
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+            <div class="fila">
+                <label for="rol" class="etiquetaRol">Rol</label>
+                <select id="rol" class="selectRol">
+                    <option hidden disabled selected value>-- seleccionar --</option>
+                    <option value="frontend">frontend</option>
+                    <option value="backend">backend</option>
+                </select>
+            </div>
+            <div class="fila">
+                <div class="condiciones">
+                    <input type="checkbox" id="terminos">
+                    <label for="terminos">Aceptar términos y condiciones.</label>
+                </div>
+            </div>
+            <button type="submit" class="botonRegistro" id="botRegistrar">Registrarse 👍</button>
+        </form>
+    </header>
+    <script src="./maqueta.js"></script>
+</body>
+</html>
+

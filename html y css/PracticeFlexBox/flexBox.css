@@ -1,0 +1,32 @@
+
+.sitio{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+.autor1,.autor2,.autor3,.autor4,.autor5,.autor6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    width:30%;
+    height: 45%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.imageAutor{
+   width: 60%;
+   height: 45%;
+}
+.parrafoAutor{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: 43%;
+ }

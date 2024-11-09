@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    background-color:#3366CC;
+    width: 100vw;
+    height: 17vh;
+}
+.contenedorLogo{
+    width:20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-left: 5vw;
+}
+.imgLogo{
+    width: 80%;
+    height: 85%;
+    border-radius: 5px;
+}
+.contenedorRedes{
+    width: 15%;
+    height: 50%;
+    margin-bottom: 1.7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30vw;
+}
+.bx.bxl-whatsapp,.bx.bxl-twitter,.bx.bxl-instagram{
+    font-size: 3.2vw;
+    color: #002552;
+}
+.botonIniciarSeccion{
+    width: 8%;
+    height: 35%;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10%;
+    margin-bottom: 3.2vh;
+}
+.botonIniciarSeccion:active{
+    background-color: #002552;
+    transform: scale(1); /* Efecto de "presionado" */
+    }
+.contenedorNavegacion{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #002552;
+}
+.enlace1,.enlace2,.enlace3,.enlace4,.enlace5,.enlace6{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+.formularioIniciarSeccion{
+    visibility: hidden;
+    background-color:#3366CC;
+    /* background-color: white; */
+    width: 20%;
+    height: 46vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 15vh;
+    
+}
+form label,.tituloIniciar{
+    color: white;
+}
+form input, select{
+    height: 125%;
+    border-radius: 5px;
+    border: none;
+}
+.selectRol{
+    width: 11vw;
+}
+
+.botonRegistro{
+    background-color: #002552;
+    color: white;
+    border: none;
+    height: 12%;
+    border-radius: 5px;
+}
+
+/******************************Table****************************/
+
+@media(max-width:900px){
+    .contenedorLogo{
+        width:30%;
+    }
+    .contenedorRedes{
+        width: 22%;
+        margin-left: 0;
+    }
+    .bx.bxl-whatsapp,.bx.bxl-twitter,.bx.bxl-instagram{
+        font-size: 5.5vw;
+    }
+    .botonIniciarSeccion{
+        width: 11%;
+    }
+}
+
+/******************************Mobile****************************/
+
+@media(max-width:480px){
+    .contenedorLogo{
+        width:35%;
+    }
+    .contenedorRedes{
+        margin-left:8vw;
+    }
+    .bx.bxl-whatsapp,.bx.bxl-twitter,.bx.bxl-instagram{
+        font-size: 7vw;
+    }
+    .botonIniciarSeccion{
+        width: 18%;
+        margin-left: 2vw;
+    }
+}

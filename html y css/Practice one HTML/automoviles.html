@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/automoviles.css">
+    <title>Chevrolet Cars</title>
+</head>
+<body>
+    <main class="principal2">
+
+        <h1 class="tituloSitio2" style="font-size: 5vh;font-weight:800;">Chevrolet Cars</h1>
+        <br> <!-- para saltos de linea -->
+        <a href="https://www.chevrolet.com.co/deportivos/camaro-carro-de-carrera" target="_blank" class="linkImagen2"><img src="./images/camaro.jpg" class="imagen2" alt="carro"></a>
+        
+        <p class="parrafo2"> <font color='blue' size="5px"> Chevrolet ofrece una amplia gama de vehículos que incluyen
+          <b>sedanes, hatchbacks, SUVs, y camionetas</b> . Aquí te dejo una breve descripción de algunos de sus <i>modelos más populares:</i> 
+          </font>
+          <br><br>  <!-- para saltos de linea -->
+          <a href="https://www.chevrolet.com.co/deportivos/camaro-carro-de-carrera" target="_blank" class="linkTexto2">Ir a fabricante</a>
+          <button onClick="window.location.href='index.html'" class="botonRegresar">Back</button>
+
+        </p>
+        
+
+    </main>
+    <section class="seccionListas2">
+        <ul class="listaDesordenada2">
+            <h3 class="tituloListaDesordenada2">Especificaciones</h3>
+            <li class="elementoListaDesordenada2">Precios</li>
+            <li class="elementoListaDesordenada2">Modelos</li>
+            <li class="elementoListaDesordenada2">Gamas</li>
+        </ul>
+        <ol class="listaOrdenada2">
+            <h3 class="tituloListaOrdenada2">Especificaciones</h3>
+            <li class="elementoListaOrdenada2">Precios</li>
+            <li class="elementoListaOrdenada2">Modelos</li>
+            <li class="elementoListaOrdenada2">Gamas</li>
+        </ol>
+
+        <form class="formulario" action="" method="">
+            <table class="tablaFormulario">
+                <tr class="fila1Formulario">
+                    <td class="tdLabelCliente"><label class="labelCliente">Nombre</label></td>
+                    <td class="nombreCliente"><input type="text" class="inputCliente" placeholder="Name"></td>
+                </tr>
+
+                <tr class="fila2Formulario">
+                    <td class="tdLabelTelefono"><label  class="labelTelefono">Telefono</label></td>
+                    <td class="tdTelefono"><input type="tel" class="inputTelefono" placeholder="Phone number"></td>
+                </tr>
+
+                <tr class="fila3Formulario">
+                    <td class="tdLabelNacimiento"><label  class="labelNacimiento">Fecha de Nacimiento</label></td>
+                    <td class="tdNacimiento"><input type="date" class="inputNacimiento"></td>
+                </tr>
+                <tr class="fila4Formulario"></tr>
+                    <td class="tdLabelEmail"><label  class="labelEmail">Correo Electronico</label></td>
+                    <td class="tdEmail"><input type="email" class="inputEmail" placeholder="Email"></td>
+                </tr>
+
+                <tr class="fila5Select">
+                    <td class="tdLabelSelect"><label class="labelSelect">Profesion</label></td>
+                    <td class="tdOpcionesSelect">
+                        <select name="profesion" class="selectProfesion">
+                            <option value="" class="optionVacia"></option>
+                            <option value="Ingeniero" class="optionIngeniero">Ingeniero</option>
+                            <option value="desarrollador" class="optionDesarrollador">Desarrollador</option>
+                            <option value="cocinero" class="optionCocinero">Cocinero</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="trJobies">
+                    <td class='tdLabelJobies'><label class="labelJobies">Jobies</label></td>
+                    <td class="tdInputCheckbox">
+                     <input class="inputDeporte" type="checkbox" value="deporte"> Deporte
+                     <input class="inputAjedrez" type="checkbox" value="ajedrez"> ajedrez
+                     <input class="inputViajar" type="checkbox" value="viajar"> Viajar
+                    </td>
+                </tr>
+
+                <tr class="trSexo"></tr>
+                    <td class='tdLabelSexo'><label class="labelSexo">Sexo</label></td>
+                    <td class="tdInputRadio">
+                     <input class="inputMasculino" name="opcion" type="radio" value="Masculino"> Masculino
+                     <input class="inputFemenino"  name="opcion"type="radio" value="Femenino"> Femenino
+                    </td>
+                </tr>
+
+                <tr class="trComentarios">
+                    <td class="tdLabelComentario"><label class="comentarios">Comentarios</label></td>
+                    <td class="tdAreaComentario"><textarea name="comentario" cols="20"  class="textarea"></textarea></td>  
+                </tr>
+
+            </table>
+
+            <button type="submit" class="botonEnvio">Enviar</button>
+
+        </form>
+    </section>
+
+
+</body>
+</html>

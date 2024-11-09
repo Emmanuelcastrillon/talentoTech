@@ -1,0 +1,15 @@
+.caja{
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 columnas de diferente tamaño*/
+    grid-template-rows:auto; /*Las filas se ajustan automaticamente*/
+    gap: 10px; /*Espacio entre los elementos*/
+    padding: 20px;
+    background-color: orange;
+
+}

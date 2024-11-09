@@ -1,0 +1,152 @@
+/* Estructura básica de la cuadrícula */
+.container {
+    display: grid; /* Define el contenedor como una cuadrícula */
+    grid-template-rows: 20% 10% 60% 10%; /* Asigna la altura a cada fila: 20% para la cabecera, 10% para la navegación, 60% para el contenido principal, 10% para el pie */
+    grid-template-columns: 25% 75%; /* Asigna el ancho de las columnas: 25% para la barra lateral izquierda, 75% para el contenido principal */
+    height: 100vh; /* La cuadrícula ocupa toda la altura de la ventana */
+    grid-template-areas: 
+        "header header" /* La cabecera ocupa todo el ancho de la página */
+        "nav nav" /* La barra de navegación ocupa todo el ancho */
+        "sidebar-left sidebar-right" /* La barra lateral izquierda y derecha ocupan cada una su parte en una fila */
+        "footer footer"; /* El pie de página ocupa todo el ancho */
+    border: 2px solid salmon;    
+}
+
+/* Estilo de la cabecera */
+.header {
+    grid-area: header; /* Asigna esta sección al área llamada 'header' */
+    background-color: #4CAF50; /* Establece un color de fondo verde */
+    color: white; /* El texto será blanco */
+    display: flex; /* Usa Flexbox para alinear el contenido dentro de la cabecera */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Barra de navegación */
+.nav {
+    grid-area: nav; /* Asigna esta sección al área llamada 'nav' */
+    background-color: #333; /* Establece un color de fondo oscuro */
+    color: white; /* El texto será blanco */
+}
+
+.nav ul {
+    list-style: none; /* Elimina los estilos predeterminados de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex; /* Usa Flexbox para alinear los elementos del menú horizontalmente */
+    justify-content: space-around; /* Distribuye los elementos del menú uniformemente */
+}
+
+.nav ul li {
+    position: relative; /* Establece una posición relativa para los submenús desplegables */
+}
+
+.nav ul li ul {
+    display: none; /* Oculta los submenús por defecto */
+    position: absolute; /* Posiciona el submenú de manera absoluta debajo del elemento principal */
+    top: 100%; /* Alinea el submenú justo debajo del menú principal */
+    left: 0; /* Alinea el submenú a la izquierda del menú principal */
+    background-color: #444; /* Establece un color de fondo más oscuro para el submenú */
+    padding: 0; /* Elimina el relleno del submenú */
+    list-style: none; /* Elimina el estilo de lista del submenú */
+}
+
+.nav ul li:hover ul {
+    display: block; /* Muestra el submenú cuando el ratón pasa sobre el elemento */
+}
+
+.nav ul li ul li {
+    padding: 10px; /* Añade relleno interno a los elementos del submenú */
+    color: white; /* Establece el color del texto en blanco */
+}
+
+.nav ul li:hover {
+    background-color: #555; /* Cambia el fondo del menú principal al pasar el ratón */
+}
+
+/* Barra lateral izquierda */
+.sidebar-left {
+    grid-area: sidebar-left; /* Asigna esta sección al área llamada 'sidebar-left' */
+    background-color: #f4f4f4; /* Establece un color de fondo gris claro */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    display: flex; /* Usa Flexbox para alinear el contenido dentro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    border-right: 1px solid #ddd; /* Añade un borde en el lado derecho para separarla de la columna principal */
+}
+
+/* Barra lateral derecha / Contenido principal */
+.sidebar-right {
+    grid-area: sidebar-right; /* Asigna esta sección al área llamada 'sidebar-right' */
+    background-color: #fff; /* Establece un color de fondo blanco */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    display: flex; /* Usa Flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Pie de página */
+.footer {
+    grid-area: footer; /* Asigna esta sección al área llamada 'footer' */
+    background-color: #333; /* Establece un color de fondo oscuro */
+    color: white; /* El texto será blanco */
+    display: flex; /* Usa Flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilos responsivos para pantallas medianas */
+@media (max-width: 1200px) {
+    .container {
+        grid-template-rows: 20% 10% 60% 10%; /* Mantiene las mismas proporciones de filas */
+        grid-template-columns: 100%; /* Hace que todas las columnas ocupen el 100% del ancho */
+        grid-template-areas:
+            "header" /* Cabecera ocupa el ancho completo */
+            "nav" /* La barra de navegación ocupa el ancho completo */
+            "sidebar-left" /* La barra lateral izquierda ahora ocupa todo el ancho */
+            "sidebar-right" /* La barra lateral derecha ahora ocupa todo el ancho */
+            "footer"; /* El pie de página ocupa el ancho completo */
+    }
+}
+
+/* Estilos responsivos para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: 20% 10% 60% 10%; /* Mantiene las mismas proporciones de filas */
+        grid-template-columns: 100%; /* Hace que todas las columnas ocupen el 100% del ancho */
+        grid-template-areas:
+            "header" /* Cabecera ocupa el ancho completo */
+            "nav" /* La barra de navegación ocupa el ancho completo */
+            "sidebar-left" /* La barra lateral izquierda ahora ocupa todo el ancho */
+            "sidebar-right" /* La barra lateral derecha ahora ocupa todo el ancho */
+            "footer"; /* El pie de página ocupa el ancho completo */
+    }
+
+    .nav ul {
+        flex-direction: column; /* Cambia la dirección de los elementos del menú a vertical para pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos del menú a la izquierda */
+    }
+
+    .sidebar-left, .sidebar-right {
+        padding: 10px; /* Reduce el espacio interno para adaptarse a pantallas pequeñas */
+    }
+}
+
+/* 
+
+Para pantallas medianas: Cuando el ancho de la pantalla es menor a 1200px, las dos columnas principales (barra lateral izquierda y contenido principal) se ajustan para ocupar el 100% del ancho, haciéndolo más adecuado para dispositivos como tablets.
+
+Para pantallas pequeñas (menos de 768px): En este caso, todo el contenido se ajusta para ocupar el 100% del ancho de la pantalla. Además:
+
+Los menús de navegación se cambian a una dirección vertical usando flex-direction: column, lo que es más adecuado para pantallas pequeñas.
+Se reducen los márgenes y los rellenos de las barras laterales para optimizar el uso del espacio.
+El código está ahora completamente adaptado para ser responsivo, lo que permite que la disposición del contenido se ajuste de manera óptima en cualquier dispositivo.
+
+@media (max-width: 1200px): Aplica los estilos cuando el ancho de la pantalla es menor a 1200px. Aquí, las columnas pasan de estar lado a lado a estar apiladas verticalmente, lo que mejora la experiencia en pantallas de tamaño mediano como tablets.
+
+@media (max-width: 768px): Aplica los estilos cuando el ancho de la pantalla es menor a 768px. Además de apilar las columnas, los menús de navegación pasan a estar en vertical, y se ajusta el relleno de las barras laterales para maximizar el espacio útil en teléfonos móviles.
+
+En resumen, los @media queries permiten que el diseño sea flexible y adaptativo, ajustando la disposición y estilos para que sea fácil de usar en cualquier dispositivo, desde grandes pantallas hasta pequeños teléfonos móviles.
+
+
+*/
