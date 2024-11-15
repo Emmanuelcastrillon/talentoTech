@@ -1,0 +1,69 @@
+.card-body{
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorRedes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 40%;
+    margin-top: 5px;
+    /* background-color: greenyellow; */
+}
+
+.bx.bxl-facebook-circle,.bx.bxl-instagram, .bx.bxl-tiktok,.bx.bxl-whatsapp{
+    font-size: 3vw;
+    color: #76b8bd;
+}
+.bx.bxl-facebook-circle:hover,
+.bx.bxl-instagram:hover,
+.bx.bxl-tiktok:hover,
+.bx.bxl-whatsapp:hover {
+    transform: scale(1.3); /* Aumentar ligeramente el tamaño */
+    transition: transform 0.001s ease, color 0.009s ease; /* Transición suave */
+}
+.bx.bxl-facebook-circle:hover{
+    color: rgba(59, 89, 152);
+}
+.bx.bxl-instagram:hover{
+    /* color:rgb(193,53,132); */
+    color: rgb(255,69,0);
+    /* color: rgb(255,176,0); */
+}
+.bx.bxl-tiktok:hover{
+    /* color: rgb(0,0,0);
+    color: rgb(13,202,240); */
+    color: rgb(255,0,90);
+}
+.bx.bxl-whatsapp:hover {
+    color: rgb(37,211,102);
+}
+
+
+/***********************************Table****************************************/
+@media(max-width:900px){
+
+    .contenedorRedes{
+        width: 180px;
+    }
+    
+    .bx.bxl-facebook-circle,.bx.bxl-instagram, .bx.bxl-tiktok,.bx.bxl-whatsapp{
+        font-size: 4vw;
+    }
+}
+/***********************************Table****************************************/
+@media(max-width:480px){
+
+    .contenedorRedes{
+        width: 150px;
+    }
+    
+    .bx.bxl-facebook-circle,.bx.bxl-instagram, .bx.bxl-tiktok,.bx.bxl-whatsapp{
+        font-size: 7vw;
+    }
+}

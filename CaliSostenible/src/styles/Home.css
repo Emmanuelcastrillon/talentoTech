@@ -1,0 +1,178 @@
+.miHome{
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+}
+.contenedorActividades{
+    width: 25%;
+    height: auto;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(128, 128, 128, 0.603);
+    /* background-color: greenyellow; */
+}
+.tituloActividades{
+    width: 85%;
+    height: 40px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 15px;
+    color: blue;
+    border-radius: 5px;
+}
+.contenedorCaminatas,.contenedorSiembra,.contenedorDonacion,.contenedorLimpieza{
+    /* background-color: orange; */
+    width: 80%;
+    height: 240px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenCaminata,.imagenSiembra,.imagenDonacion,.imagenLimpieza{
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    margin-top: 10px;
+}
+.imagenCaminata:hover,
+.imagenSiembra:hover,
+.imagenDonacion:hover,
+.imagenLimpieza:hover{
+    transform: scale(1.1);
+}
+.tituloCaminata,.tituloSiembra,.tituloDonacion,.tituloLimpieza{
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: blue;
+}
+
+.contenedorInfoPrincipal{
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorTextoHome{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: greenyellow; */
+}
+.tituloHome{
+    width: 50%;
+    margin-top: 20px;
+    font-size: 35px;
+    color: blue;
+    /* background-color: blue; */
+    text-align: center;
+}
+.subtituloHome{
+    /* background-color: blue; */
+    font-size: 30px;
+    color: blue;
+    margin-top: 15px;
+}
+.parrafoSostenibilidad,.parrafoCali{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    margin-top: 25px;
+    text-align: justify;
+    /* background-color: orange; */
+}
+
+
+/**************************table******************************/
+@media(max-width:1000px){
+    .contenedorActividades{
+        width: 60%;
+    }
+    .tituloActividades{
+        width: 85%;
+        height:60px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgb(0, 255, 85); */
+    }
+    .contenedorCaminatas,.contenedorSiembra,.contenedorDonacion,.contenedorLimpieza{
+        width: 80%;
+        height:330px;
+        /* border: 1px solid rgba(128, 128, 128, 0.795); */
+    }
+    .imagenCaminata,.imagenSiembra,.imagenDonacion,.imagenLimpieza{
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
+    }
+    .tituloCaminata,.tituloSiembra,.tituloDonacion,.tituloLimpieza{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .tituloHome{
+        font-size: 30px;   
+    }
+    .subtituloHome{
+        font-size: 25px;
+    }
+
+    
+    
+}
+
+/**************************Mobile******************************/
+
+@media(max-width:740px){
+    .miHome{
+       flex-direction:column-reverse;
+       justify-content: center;
+       align-items: center;
+    }
+    .contenedorActividades{
+        margin-top: 35px;
+        width: 80%;
+        border: none;
+        /* border: 1px solid rgba(128, 128, 128, 0.603);  */
+    }
+    .tituloActividades{
+        width: 100%;
+        margin-top: 5px;
+        height: 65px;
+        font-size: 16px;  
+    }
+    .contenedorCaminatas,.contenedorSiembra,.contenedorDonacion,.contenedorLimpieza{
+        width: 90%;
+    }
+    .imagenCaminata,.imagenSiembra,.imagenDonacion,.imagenLimpieza{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+    .tituloCaminata,.tituloSiembra,.tituloDonacion,.tituloLimpieza{
+        font-size: 16px;
+    }
+    .parrafoSostenibilidad,.parrafoCali{
+        width: 80%;
+        font-size: 18px;
+        padding: 20px 20px;
+        border: 1px solid rgba(128, 128, 128, 0.795);
+    }
+    
+      
+
+}
